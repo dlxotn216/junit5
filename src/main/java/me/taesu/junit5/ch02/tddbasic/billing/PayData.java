@@ -1,4 +1,4 @@
-package me.taesu.junit5.billing;
+package me.taesu.junit5.ch02.tddbasic.billing;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

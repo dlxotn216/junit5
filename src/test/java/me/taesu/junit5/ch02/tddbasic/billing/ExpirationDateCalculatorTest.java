@@ -1,10 +1,10 @@
-package me.taesu.junit5.billing;
+package me.taesu.junit5.ch02.tddbasic.billing;
 
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Created by itaesu on 2021/01/11.
@@ -13,9 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * @version 1.2.0
  * @since 1.2.0
  */
-
-public class ExpirationDateCalculatorTest {
-
+class ExpirationDateCalculatorTest {
     private ExpirationDateCalculator expirationDateCalculator = new ExpirationDateCalculator();
 
     @Test
@@ -148,5 +146,4 @@ public class ExpirationDateCalculatorTest {
         assertEquals(expirationDateCalculator.getPayMonth(10000 * 14), 12 + 4);
         assertEquals(expirationDateCalculator.getPayMonth(10000 * 22), 24 + 2);
     }
-
 }
